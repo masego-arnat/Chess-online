@@ -1,0 +1,47 @@
+{{template "memberHeader2" .}}
+<input type="hidden" id="user" value="{{.User}}" />
+<script src="../third-party/js/chess.js"></script>
+<h1><span id="checkwebsocket"></span></h1>
+<div id="chatleft">
+<textarea id="textbox"  cols="30" rows="28"  readonly="true" ></textarea>
+<p><input id="message" type="text" maxlength="68" size="32" value="hello"><button id="sendMessage">Send Message</button></p>
+</div>
+
+<span id="playernames"><div id="topPlay"><span id="top">Black:</span> <input id="toptime" size="14"  value="10:00" readonly="true"> </div> <div id="bottomPlay">
+<span id="bottom">White:</span> <input id="bottomtime" size="14" value="10:00" readonly="true">  </div>
+<br><br><button id="rematchButton" value="Rematch">Rematch</button></span>
+
+<div id="content">
+<div id="board"></div>
+<button id="flipOrientationBtn">Flip</button>
+&nbsp;&nbsp;<button id="abortButton">Abort</button>
+&nbsp;&nbsp;<button id="drawButton">Offer Draw</button>
+&nbsp;&nbsp;<button id="resignButton">Resign</button>
+</div>
+
+<div id="notation">
+&nbsp;&nbsp;<button id="goStart"><<</button>
+&nbsp;&nbsp;<button id="goBack"><-</button>
+&nbsp;&nbsp;<button id="goForward">-></button>
+&nbsp;&nbsp;<button id="goEnd">>></button>
+&nbsp;&nbsp;<button id="exportPGN">Export PGN</button>
+
+<p>Status: <span id="status"></span></p>
+<p>PGN: <span id="pgn"></span><p>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+  </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../third-party/js/jquery-2.1.4.min.js">\x3C/script>')</script>
+<script src="../third-party/js/chessboard.js"></script>
+<script src="../js/boardsetup.js"></script>
+<script src="../js/boardcolor.js"></script>
+<script src="../third-party/js/tock.js"></script>
+<script src="../third-party/js/download.js"></script>
+<script src="../js/memberchess.js"></script>
+</body>
+</html>

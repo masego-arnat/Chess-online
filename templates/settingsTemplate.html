@@ -1,0 +1,58 @@
+{{template "memberHeader" .}} 
+<h2>Settings</h2>
+<center>
+<b>Sound</b><div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="toggleSound" checked>
+    <label class="onoffswitch-label" for="toggleSound"> 
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div><br>
+<b>Premove</b><div class="onoffswitch" >
+     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="togglePremove" checked>
+     <label class="onoffswitch-label" for="togglePremove"> 
+         <span class="onoffswitch-inner"></span>
+         <span class="onoffswitch-switch"></span>
+     </label>
+</div><br>
+<b>Chat</b><div class="onoffswitch" >
+     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="toggleChat" checked>
+     <label class="onoffswitch-label" for="toggleChat"> 
+         <span class="onoffswitch-inner"></span>
+         <span class="onoffswitch-switch"></span>
+     </label>
+</div><br>
+<b>Spectator Mode</b><div class="onoffswitch" >
+     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="toggleSpectate" checked>
+     <label class="onoffswitch-label" for="toggleSpectate"> 
+         <span class="onoffswitch-inner"></span>
+         <span class="onoffswitch-switch"></span>
+     </label>
+</div><br>
+<b>Piece Theme</b><br>
+<input type="radio" id="wiki" name="group1" value="Wikipedia" checked> Wikipedia
+<img src="img/chesspieces/wikipedia/bK.png"  alt="Wikipedia chess theme">
+<input type="radio" id="uscf" name="group1" value="USCF" > USCF
+<img src="img/chesspieces/uscf/bK.png"  alt="USCF chess theme">
+<input type="radio" id="alpha" name="group1" value="Alpha"> Alpha
+<img src="img/chesspieces/alpha/bK.png"  alt="Alpha chess theme">
+
+<br><b>Board Color</b><br>
+<input type="radio" id="defaultColor" name="group2" value="defaultColor" checked> Default
+<img src="img/color/brown.png"  alt="Brown">
+<input type="radio" id="blueColor" name="group2" value="blueColor"> Blue
+<img src="img/color/blue.png"  alt="Blue">
+<input type="radio" id="greenColor" name="group2" value="greenColor"> Green
+<img src="img/color/green.png"  alt="Green">
+<input type="radio" id="greyColor" name="group2" value="greyColor"> Grey
+<img src="img/color/grey.png"  alt="Grey">
+<input type="radio" id="pinkColor" name="group2" value="pinkColor"> Pink
+<img src="img/color/pink.png"  alt="Pink">
+<div id="board" style="width: 400px"></div>
+</center>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../third-party/js/jquery-2.1.4.min.js">\x3C/script>')</script>
+<script src="../third-party/js/chessboard.js"></script>
+<script src="js/settings.js"></script>
+</body>
+</html>
